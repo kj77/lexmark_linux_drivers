@@ -1,0 +1,7 @@
+ACTION!="add", GOTO="lexmark_custom_rules_end"
+ATTRS{idVendor}=="043d", ATTRS{idProduct}=="0142", MODE="666"
+ATTRS{idVendor}=="043d", ATTRS{idProduct}=="0150", MODE="666"
+ATTRS{idVendor}=="043d", ATTRS{idProduct}=="013f", MODE="666"
+ATTRS{idVendor}=="043d", ATTRS{idProduct}=="0151", MODE="666"
+ATTRS{idVendor}=="043d", ATTRS{idProduct}=="0116", MODE="666"
+LABEL="lexmark_custom_rules_end"

@@ -1,0 +1,307 @@
+#!/bin/sh
+
+########################################################################
+#             (c) Copyright 2007 Lexmark International, Inc.           #
+#                        All rights reserved                           #
+########################################################################
+#                                                                      #
+#  This command sets or returns the default browser.                   #
+#                                                                      #
+########################################################################
+
+#-- set debug to false by default. To turn debug "on" set to "1"
+DEBUG=0
+if [ ! -z "${SANE_DEBUG_LEXMARK_NSCAN}" ] ;then
+   DEBUG=1
+fi
+
+
+#-- initialize variables
+APP_NAME=lexinkjet
+PRODUCT_LINK="/usr/lexinkjet"
+
+#-------------------------
+#-- BEGIN: System Commands
+#-------------------------
+MORE_CMD="/bin/more"
+PRINT_CMD="/bin/echo"
+GREP_CMD="/bin/grep"
+EGREP_CMD="/bin/egrep"
+CAT_CMD="/bin/cat"
+MKDIR_CMD="/bin/mkdir"
+TOUCH_CMD="/bin/touch"
+CHMOD_CMD="/bin/chmod"
+RM_CMD="/bin/rm"
+
+if [ -f "/bin/awk"  ];then  AWK_CMD="/bin/awk" ; else  AWK_CMD="/usr/bin/awk"  ; fi
+if [ -f "/bin/sed"  ];then  SED_CMD="/bin/sed"  ; else  SED_CMD="/usr/bin/sed"  ; fi
+
+SYS_COMMANDS="${CAT_CMD} ${PRINT_CMD} ${PRINT_CMD} ${GREP_CMD} ${EGREP_CMD} ${MORE_CMD} ${AWK_CMD} ${SED_CMD} ${CHMOD_CMD} ${RM_CMD}"
+FLAG="0"
+   for i in ${SYS_COMMANDS}
+   do
+     if [ ! -x "${i}" ]; then
+        if [ "${FLAG}" = "0" ]; then
+				${PRINT_CMD}
+				${PRINT_CMD} "The following system command(s) were not found:"
+				${PRINT_CMD}
+				FLAG="1"
+        fi
+        ${PRINT_CMD} "   File missing  --  $i"
+     fi
+   done
+
+	if [ "${FLAG}" = "1" ]; then
+      ${PRINT_CMD}
+      ${PRINT_CMD} "HOW TO FIX"
+      ${PRINT_CMD} "----------"
+      ${PRINT_CMD} "This problem can be easily corrected by manually editing the"
+      ${PRINT_CMD} "script [ ${PRODUCT_LINK}/bin/${APP_NAME} ] and modify."
+      ${PRINT_CMD} "the System Commands section."
+      exit 1;
+   fi
+
+KNOWN_BROWSERS="/usr/dt/bin/netscape
+                /opt/NSCPcom/netscape
+                /usr/bin/netscape
+                /usr/X11R6/bin/netscape
+                /usr/X11R6/bin/netscape6
+                /usr/bin/konqueror
+                /opt/kde3/bin/konqueror
+                /usr/bin/mozilla
+                /usr/sfw/bin/mozilla
+                /usr/X11R6/bin/mozilla
+                /usr/bin/galeon
+                /usr/bin/firefox
+                /opt/gnome/bin/galeon"
+
+BROWSER="0"
+
+TEMPLATE="
+if [ ! -x \"\${BROWSER}\" ]; then
+        exit 1
+fi
+
+if [ -z \"\${1}\" ]; then
+        echo \${BROWSER}
+else
+        \${BROWSER} \${*}
+fi
+
+exit \${?}
+"
+
+#-- usage_short text
+usage_short ()
+{
+${CAT_CMD} << EOT
+
+USAGE:
+    lsbrowser -h 		: help 
+    lsbrowser -l 		: list all available browser
+    lsbrowser -d		: return the default browser_path 
+    lsbrowser -c "browser_path" : check if browser_path is valid
+    lsbrowser -s "browser_path" : set default browser to browser_path
+
+EOT
+}
+
+#-- usage_long text
+usage_long ()
+{
+${CAT_CMD} << EOT
+
+lsbrowser
+    Sets the default browser that the application will use.
+
+USAGE:
+    lsbrowser -h 		: help 
+    lsbrowser -l 		: list all available browser
+    lsbrowser -d		: return the default browser_path 
+    lsbrowser -c "browser_path" : check if browser_path is valid
+    lsbrowser -s "browser_path" : set default browser to browser_path
+
+OPTIONS:  
+    -x  Run sbrowser in debug mode.
+
+EOT
+
+}
+
+list_browsers()
+{
+	STR=""
+	for PATH in ${KNOWN_BROWSERS}
+	do
+		if [ ! -x "${PATH}" ];then
+			continue
+		fi
+		STR="${STR}:${PATH}"
+	done
+	echo ${STR} | ${SED_CMD} -e 's/^://g' | ${SED_CMD} -e 's/:/\n/g'
+	#echo ${STR} | ${SED_CMD} -e 's/:/\n/g'
+
+	if [ "${STR}" ];then
+		return 0
+	else
+		return 1
+	fi
+}
+
+get_default()
+{
+	#-- Return Values: 
+	#-- 	0 - default browser set. path stored in ${BROWSER} variable
+	#-- 	1 - 'browser' script not found
+	#-- 	2 - 'browser' script executable
+	#--	3 - 'browser' returned an error. rebuild script from scratch
+
+	if [ ! -f "${BROWSER_SH}" ];then
+		return 1;
+	elif [ ! -x "${BROWSER_SH}" ];then
+		return 2;
+	fi	
+
+	BROWSER=`${BROWSER_SH}`;
+	if [ $? -eq 0 ];then
+		${PRINT_CMD} ${BROWSER}
+		return 0;
+	elif [ $? -eq 1 ]; then
+		return 3;
+	fi
+}
+
+remove_default()
+{
+	#-- Return Values: 
+	#-- 	0 - default browser removed. 
+
+	if [ -f "${BROWSER_SH}" ];then
+		${RM_CMD} ${BROWSER_SH}
+	fi
+}
+
+check_browser()
+{
+	#-- Return Values: 
+	#-- 	0 - browser good to go 
+	#-- 	1 - browser not found
+	#-- 	2 - browser not executable
+	#-- 	3 - browser not specified
+	
+	RET="0";
+
+	if [ ! "${BROWSER}" ];then
+		return 3;
+	elif [ ! -f "${BROWSER}" ];then
+		return 1;
+	elif [ ! -x "${BROWSER}" ];then
+		return 2;
+	else
+		return 0;
+	fi
+}
+
+set_browser()
+{
+	#-- Return Values: 
+	#-- 	0 - browser good to go 
+	#-- 	1 - browser not found
+	#-- 
+
+	if [ ! -f "${BROWSER}" ];then
+		return 1;
+	elif [ ! -x "${BROWSER}" ];then
+		return 2;
+	fi
+
+	if [ ! -e "${USER_DIR}" ];then
+		${MKDIR_CMD} ${USER_DIR}
+	fi	
+
+	if [ -f "${BROWSER_SH}" ];then
+		${RM_CMD} ${BROWSER_SH}
+	fi
+
+	${PRINT_CMD} "#!/bin/sh" > ${BROWSER_SH}
+	${PRINT_CMD} "BROWSER=\"${BROWSER}\"" >> ${BROWSER_SH}
+	${PRINT_CMD} "${TEMPLATE}" >> ${BROWSER_SH}
+
+        ${CHMOD_CMD} 755 ${BROWSER_SH}
+
+	return 0;
+}
+
+pdebug()
+{
+	if [ "${DEBUG}" = "1" ];then
+		printf "${1}\n" >&2
+	fi
+}
+
+#-- parse arguments begin
+
+while getopts xhldrc:s: arg
+do
+	case "${arg}" in
+		x)
+			DEBUG="1"
+			;;
+		h)
+			RUNMODE="help"
+			;;
+		l)	
+			RUNMODE="list"
+			;;
+		d)	
+			RUNMODE="default"
+			;;
+		r)	
+			RUNMODE="remove"
+			;;
+		c)	
+			RUNMODE="check"
+			BROWSER="${OPTARG}"
+			if [ ! ${BROWSER} ];then
+				${BROWSER} = ""
+			fi
+			;;
+		s)	
+			RUNMODE="set"
+			BROWSER="${OPTARG}"
+			;;
+	esac
+done
+
+#PDHOME=`${PRODUCT_LINK}/bin/lshome`
+#if [ $? -ne 0 ];then
+	PDHOME=${HOME}
+#fi
+
+USER_DIR="${PDHOME}/.${APP_NAME}"
+BROWSER_SH="${PDHOME}/.${APP_NAME}/browser"
+
+if [ "${RUNMODE}" = "help" ]; then
+	usage_long | ${MORE_CMD}
+        exit 1
+elif [ "${RUNMODE}" = "list" ]; then
+	list_browsers
+	exit $?
+elif [ "${RUNMODE}" = "default" ]; then
+	get_default
+	if [ $? -gt 1 ]; then
+		${RM_CMD} ${BROWSER_SH}
+		exit 2
+	fi
+	exit 0
+elif [ "${RUNMODE}" = "remove" ]; then
+	remove_default
+	exit 0
+elif [ "${RUNMODE}" = "check" ]; then
+	check_browser ${BROWSER}
+	exit $?
+elif [ "${RUNMODE}" = "set" ]; then
+	set_browser ${BROWSER}
+	exit $?
+fi
+

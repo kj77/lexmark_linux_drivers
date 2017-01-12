@@ -1,0 +1,364 @@
+LEXMARK SOFTWARE LIMITED WARRANTY AND LICENSE AGREEMENTS AND ADDITIONAL 
+LICENSE TERMS FOR SUN MICROSYSTEMS, INC. SOFTWARE
+
+PLEASE READ CAREFULLY BEFORE SELECTING THE "I agree to this license 
+agreement" CHECK BOX ON THIS PAGE: BY SELECTING THE "I agree to this 
+license agreement" CHECK BOX OR BY USING THIS PRODUCT, YOU AGREE TO BE 
+BOUND BY ALL THE TERMS AND CONDITIONS OF THIS SOFTWARE LIMITED WARRANTY 
+AND LICENSE AGREEMENT.  IF YOU DO NOT AGREE, SELECT THE "Cancel" BUTTON 
+ON THIS PAGE AND DO NOT INSTALL OR COPY,THE SOFTWARE PROGRAM OR OTHERWISE 
+USE THE PRODUCT.   IF YOU DO NOT AGREE WITH THE TERMS OF THIS SOFTWARE 
+LIMITED WARRANTY AND LICENSE AGREEMENTS, PROMPTLY RETURN THE PRODUCT 
+UNUSED AND REQUEST A REFUND OF THE AMOUNT YOU PAID.  IF YOU ARE INSTALLING 
+THIS SOFTWARE PRODUCT FOR USE BY OTHER PARTIES, YOU AGREE TO INFORM THE 
+USERS THAT USE OF THE PRODUCT INDICATES ACCEPTANCE OF THESE TERMS.
+
+CARTRIDGE LICENSE AGREEMENT*
+I agree that the patented print cartridge(s) shipped with this printing 
+device are sold subject to the following license/agreement:  The patented 
+print cartridge(s) contained inside is/are licensed for a single use 
+only and is/are designed to stop working after delivering a fixed amount 
+of ink.  A variable amount of ink will remain in the cartridge when 
+replacement is required.  After this single use, the license to use the 
+print cartridge terminates, and the used cartridge must be returned 
+only to Lexmark for remanufacturing, refilling or recycling.  If I buy 
+another cartridge in the future that is sold subject to the above terms, 
+I accept such terms as to that cartridge.  If you do not accept the 
+terms of this single use license/agreement; return this product in its 
+original packaging to your point of purchase.  A replacement cartridge 
+sold without these terms is available at www.lexmark.com.
+
+I.  LEXMARK SOFTWARE LICENSE AGREEMENT
+This Software License Agreement ("Software License Agreement") is a 
+legal agreement between you (either an individual or a single entity) 
+and Lexmark International, Inc. ("Lexmark") that, to the extent your 
+Lexmark product or Software Program is not otherwise subject to a written 
+software license agreement between you and Lexmark or its suppliers, 
+governs your use of any Software Program installed on or provided by 
+Lexmark for use in connection with your Lexmark product.  The term 
+"Software Program" includes machine-readable instructions, 
+audio/visual content (such as images and recordings), and associated 
+media, printed materials and electronic documentation, whether 
+incorporated into, distributed with or for use with your Lexmark product, 
+except any software owned by Sun Microsystems, Inc., which is subject to 
+the Additional License Terms for Sun Microsystems, Inc. Software as set 
+forth below.
+
+1. STATEMENT OF SOFTWARE LIMITED WARRANTY.  Lexmark warrants that the 
+media (e.g., diskette or compact disk) on which the Software Program 
+(if any) is furnished is free from defects in materials and workmanship 
+under normal use during the warranty period.  The warranty period is 
+ninety (90) days and commences on the date the Software Program is 
+delivered to the original end-user. This limited warranty applies only 
+to Software Program media purchased new from Lexmark or an Authorized 
+Lexmark Reseller or Distributor.  Lexmark will replace the Software 
+Program should it be determined that the media does not conform to 
+this limited warranty.  
+
+2. DISCLAIMER AND LIMITATION OF WARRANTIES.  EXCEPT AS PROVIDED IN THIS 
+SOFTWARE LICENSE AGREEMENT AND TO THE MAXIMUM EXTENT PERMITTED BY 
+APPLICABLE LAW, LEXMARK AND ITS SUPPLIERS PROVIDE THE SOFTWARE PROGRAM 
+"AS IS" AND HEREBY DISCLAIM ALL OTHER WARRANTIES AND CONDITIONS, EITHER 
+EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, TITLE, NON-INFRINGEMENT, 
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, AND ABSENCE OF 
+VIRUSES, ALL WITH REGARD TO THE SOFTWARE PROGRAM.  TO THE EXTENT LEXMARK 
+CANNOT BY LAW DISCLAIM ANY COMPONENT OF THE IMPLIED WARRANTIES OF 
+MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, LEXMARK LIMITS THE 
+DURATION OF SUCH WARRANTIES TO THE 90-DAY TERM OF THE EXPRESS SOFTWARE 
+LIMITED WARRANTY.
+
+       This Agreement is to be read in conjunction with certain statutory 
+       provisions, as that may be in force from time to time, that imply 
+       warranties or conditions or impose obligations on Lexmark that cannot 
+       be excluded or modified.  If any such provisions apply, then to the 
+       extent Lexmark is able, Lexmark hereby limits its liability for breach 
+       of those provisions to one of the following:  providing you a 
+       replacement copy of the Software Program or reimbursement of the 
+       price paid for the Software Program.  
+       
+       The Software Program may include internet links to other software 
+       applications and/or internet web pages hosted and operated by third 
+       parties unaffiliated with Lexmark.  You acknowledge and agree that 
+       Lexmark is not responsible in any way for the hosting, performance, 
+       operation, maintenance, or content of, such software applications 
+       and/or internet web pages.
+
+3. LIMITATION OF REMEDY.  TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, 
+ANY AND ALL LIABILITY OF LEXMARK UNDER THIS SOFTWARE LICENSE AGREEMENT IS 
+EXPRESSLY LIMITED TO THE GREATER OF THE PRICE PAID FOR THE SOFTWARE PROGRAM 
+AND FIVE U.S. DOLLARS (OR THE EQUIVALENT IN LOCAL CURRENCY).  YOUR SOLE 
+REMEDY AGAINST LEXMARK IN ANY DISPUTE UNDER THIS SOFTWARE LICENSE AGREEMENT 
+SHALL BE TO SEEK TO RECOVER ONE OF THESE AMOUNTS, UPON PAYMENT OF WHICH 
+LEXMARK SHALL BE RELEASED AND DISCHARGED OF ALL FURTHER OBLIGATIONS AND 
+LIABILITY TO YOU.  
+
+IN NO EVENT WILL LEXMARK, ITS SUPPLIERS, SUBSIDIARIES, OR RESELLERS BE 
+LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, EXEMPLARY, PUNITIVE, OR 
+CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO LOST PROFITS OR REVENUES, 
+LOST SAVINGS, INTERRUPTION OF USE OR ANY LOSS OF, INACCURACY IN, OR DAMAGE 
+TO, DATA OR RECORDS, FOR CLAIMS OF THIRD PARTIES, OR DAMAGE TO REAL OR 
+TANGIBLE PROPERTY, FOR LOSS OF PRIVACY ARISING OUT OR IN ANY WAY RELATED 
+TO THE USE OF OR INABILITY TO USE THE SOFTWARE PROGRAM, OR OTHERWISE IN 
+CONNECTION WITH ANY PROVISION OF THIS SOFTWARE LICENCE AGREEMENT), 
+REGARDLESS OF THE NATURE OF THE CLAIM, INCLUDING BUT NOT LIMITED TO BREACH 
+OF WARRANTY OR CONTRACT, TORT (INCLUDING NEGLIGENCE OR STRICT LIABILITY), 
+AND EVEN IF LEXMARK, OR ITS SUPPLIERS, AFFILIATES, OR REMARKETERS HAVE 
+BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, OR FOR ANY CLAIM BY YOU 
+BASED ON A THIRD-PARTY CLAIM, EXCEPT TO THE EXTENT THIS EXCLUSION OF 
+DAMAGES IS DETERMINED LEGALLY INVALID.  THE FOREGOING LIMITATIONS APPLY 
+EVEN IF THE ABOVE-STATED REMEDIES FAIL OF THEIR ESSENTIAL PURPOSE.
+
+3.	U.S.A. STATE LAWS.  This Software Limited Warranty gives you specific 
+legal rights.  You may also have other rights that vary from state to state.  
+Some states do not allow limitations on how long an implied warranty lasts or 
+the exclusion of limitation of incidental or consequential damages, so the 
+above limitations may not apply to you.
+
+4.	LICENSE GRANT.  Lexmark grants you the following rights provided you 
+comply with all terms and conditions of this Software License Agreement:
+
+a.	Use.  You may Use one (1) copy of the Software Program.  The term 
+"Use" means storing, loading, installing, executing, or displaying the 
+Software Program.  If Lexmark has licensed the Software Program to you 
+for concurrent use, you must limit the number of authorized users to the 
+number specified in your agreement with Lexmark.  You may not separate the 
+components of the Software Program for use on more than one computer.  
+You agree that you will not Use the Software Program, in whole or in part, 
+in any manner that has the effect of overriding, modifying, eliminating, 
+obscuring, altering or de-emphasizing the visual appearance of any trademark, 
+trade name, trade dress or intellectual property notice that appears on any 
+computer display screens normally generated by, or as a result of, the 
+Software Program.
+
+b.	Copying. You may make one (1) copy of the Software Program solely for 
+purposes of backup, archiving, or installation, provided the copy contains 
+all of the original Software Program's proprietary notices.  You may not 
+copy the Software Program to any public or distributed network.
+
+c.	Reservation of Rights. The Software Program, including all fonts, is 
+copyrighted and owned by Lexmark International, Inc. and/or its suppliers.  
+Lexmark reserves all rights not expressly granted to you in this Software 
+License Agreement.
+
+d.	Freeware.  Notwithstanding the terms and conditions of this Software 
+License Agreement, all or any portion of the Software Program that 
+constitutes software provided under public license by third parties 
+("Freeware") is licensed to you subject to the terms and conditions of 
+the software license agreement accompanying such Freeware, whether in the 
+form of a discrete agreement, shrink-wrap license, or electronic license 
+terms at the time of download or installation.  Use of the Freeware by you 
+shall be governed entirely by the terms and conditions of such license.
+
+6.	TRANSFER.  You may transfer the Software Program to another end-user.  
+Any transfer must include all software components, media, printed materials, 
+and this Software License Agreement and you may not retain copies of the 
+Software Program or components thereof.  The transfer may not be an indirect 
+transfer, such as a consignment.  Prior to the transfer, the end-user 
+receiving the transferred Software Program must agree to all these Software 
+License Agreement terms.  Upon transfer of the Software Program, your license 
+is automatically terminated.  You may not rent, sublicense, or assign the 
+Software Program except to the extent provided in this Software License 
+Agreement.
+
+7.	UPGRADES.  To Use a Software Program identified as an upgrade, you must 
+first be licensed to the original Software Program identified by Lexmark as 
+eligible for the upgrade.  After upgrading, you may no longer use the original 
+Software Program that formed the basis for your upgrade eligibility.
+
+8.	LIMITATION ON REVERSE ENGINEERING.  You may not alter, reverse engineer, 
+reverse assemble, reverse compile or otherwise translate the Software Program 
+or assist or otherwise facilitate others to do so, except as and to the 
+extent expressly permitted to do so by applicable law for the purposes of 
+inter-operability, error correction, and security testing.  If you have 
+such statutory rights, you will notify Lexmark in writing of any intended 
+reverse engineering, reverse assembly, or reverse compilation.  You may not 
+decrypt the Software Program unless necessary for the legitimate Use of the 
+Software Program.
+
+9.	ADDITIONAL SOFTWARE.  This Software License Agreement applies to updates 
+or supplements to the original Software Program provided by Lexmark unless 
+Lexmark provides other terms along with the update or supplement.
+
+10.	TERM.  This Software License Agreement is effective unless terminated or 
+rejected.  You may reject or terminate this license at any time by destroying 
+all copies of the Software Program, together with all modifications, 
+documentation, and merged portions in any form, or as otherwise described 
+herein.  Lexmark may terminate your license upon notice if you fail to comply 
+with any of the terms of this Software License Agreement.  Upon such termination, 
+you agree to destroy all copies of the Software Program together with all 
+modifications, documentation, and merged portions in any form.  
+
+11.	TAXES.  You agree that you are responsible for payment of any taxes 
+including, without limitation, any goods and services and personal property 
+taxes, resulting from this Software License Agreement or your Use of the 
+Software Program.  
+
+12.	LIMITATION ON ACTIONS.  No action, regardless of form, arising out of 
+this Software License Agreement may be brought by either party more than 
+two years after the cause of action has arisen, except as provided under 
+applicable law.  
+
+13.	APPLICABLE LAW.  This Software Licensing Agreement is governed by the 
+laws of the Commonwealth of Kentucky, United States of America.  No choice 
+of law rules in any jurisdiction shall apply.  The UN Convention on Contracts 
+for the International Sale of Goods shall not apply.
+
+14.	UNITED STATES GOVERNMENT RESTRICTED RIGHTS.  The Software Program has 
+been developed entirely at private expense.  Rights of the United States 
+Government to use the Software Program is as set forth in this Software 
+License Agreement and as restricted in DFARS 252.227-7014 and in similar 
+FAR provisions (or any equivalent agency regulation or contract clause).
+
+15.	CONSENT TO USE OF DATA.  You agree that Lexmark, its affiliates, and 
+agents may collect and use information you provide in relation to registration 
+and support services and upgrades performed with respect to the Software 
+Program.  Lexmark agrees not to use this information in a form that personally 
+identifies you except to the extent necessary to provide such services.
+16.	EXPORT RESTRICTIONS.  You may not (a) acquire, ship, transfer, or 
+reexport, directly or indirectly, the Software Program or any direct product 
+therefrom, in violation of any applicable export laws or (b) permit the 
+Software Program to be used for any purpose prohibited by such export laws, 
+including, without limitation, nuclear, chemical, or biological weapons 
+proliferation.
+
+17.	AGREEMENT TO CONTRACT ELECTRONICALLY.  You and Lexmark agree to form 
+this Software License Agreement electronically.  This means that when you 
+click the "Agree" or "I accept" button on this page, you acknowledge 
+your agreement to these Software License Agreement terms and conditions 
+and that you are doing so with the intent to "sign" a contract with Lexmark.
+
+18.	CAPACITY AND AUTHORITY TO CONTRACT.  You represent that you are of 
+the legal age of majority in the place you sign this Software License 
+Agreement and, if applicable, you are duly authorized by your employer or 
+principal to enter into this contract.
+
+19.	ENTIRE AGREEMENT.  This Software License Agreement (including any 
+addendum or amendment to this Software License Agreement that is included 
+with the Software Program) is the entire agreement between you and Lexmark 
+relating to the Software Program.  Except as otherwise provided for herein, 
+these terms and conditions supersede all prior or contemporaneous oral or 
+written communications, proposals, and representations with respect to the 
+Software Program or any other subject matter covered by this Software License 
+Agreement (except (a) with respect to software owned by Sun Microsystems, Inc. 
+which is subject to the Additional License Terms for Sun Microsystems, Inc. 
+software as set forth below and (b) to the extent such extraneous terms do 
+not conflict with the terms of this Software License Agreement, any other 
+written agreement signed by you and Lexmark relating to your Use of the 
+Software Program).  To the extent any Lexmark policies or programs for 
+support services conflict with the terms of this Software License Agreement, 
+the terms of this Software License Agreement shall control.
+
+* Products within the XX90 Series (including but not limited to models 
+Z2390, Z2490, X2690, X3690, and X4690) are not subject to the Cartridge 
+License Agreement.  This Cartridge License Agreement does not apply to 
+cartridges included within the printer boxes of XX75 Series products 
+(including but not limited to models X4975 and X7675).  It applies to 
+replacement cartridges that are sold subject to these terms and conditions, 
+however.  Replacement cartridges sold without these terms are available 
+through www.lexmark.com.
+
+
+II.  ADDITIONAL LICENSE TERMS FOR SUN MICROSYSTEMS, INC. SOFTWARE
+
+In addition to the foregoing, with respect to any Sun Microsystems, Inc. 
+software ("Sun Software") licensed hereunder, the following terms apply:
+
+1. LICENSE RESTRICTIONS.  The Sun Software is licensed to Licensee only 
+under the terms of this Agreement, and Sun reserves all rights not expressly 
+granted to Licensee. Licensee may not use, copy, modify, or transfer the Sun 
+Software, or any copy thereof, except as expressly provided for in this 
+Agreement or by applicable law. Except as otherwise provided by law for 
+purposes of decompilation of the Sun Software solely for inter-operability, 
+error correction or security testing, Licensee may not reverse engineer, 
+disassemble, decompile, or translate the Sun Software, or otherwise attempt 
+to derive the source code of the Sun Software. Licensee may not rent, lease, 
+loan, or sell the Sun Software, or any part of the Software. No right, 
+title, or interest in or to any trademarks, service marks, or trade names 
+of Sun or Sun's licensors is granted hereunder.
+
+2. AIRCRAFT PRODUCT AND NUCLEAR APPLICATIONS RESTRICTION.  Sun Software is 
+not designed or intended for use in on-line control of aircraft, air traffic, 
+aircraft navigation or aircraft communications; or in the design, construction, 
+operation or maintenance of any nuclear facility.  Sun disclaims any express 
+or implied warranty of fitness for such uses. Licensee warrants that it will 
+not use or redistribute the Sun Software for such purposes.
+
+3. NO WARRANTY.  To the full extent permitted by law, the Sun Software is 
+provided to licensee "AS IS". All express or implied conditions, representations, 
+and warranties, including any implied warranty of merchantability, satisfactory 
+quality, fitness for a particular purpose, or non-infringement, are disclaimed, 
+except to the extent that such disclaimers are held to be legally invalid.
+
+4. LIMITATION OF DAMAGES.  To the extent not prohibited by applicable law, Sun's 
+aggregate liability to Licensee or to any third party for claims relating to this 
+agreement, whether for breach or in tort, will be limited to the fees paid by 
+Licensee for Sun Software which is the subject matter of the claims. To the full 
+extent permitted by applicable law, in no event will Sun be liable for any indirect, 
+punitive, special, incidental or consequential damage in connection with or arising 
+out of this Agreement (including loss of business, revenue, profits, use, data or 
+other economic advantage), however it arises, whether for breach or in tort 
+(including, without limitation, negligence), even if Sun has been previously 
+advised of the possibility of such damage. Liability for damages will be limited 
+and excluded, even if any exclusive remedy provided for in this Agreement fails of 
+its essential purpose.
+
+5. GOVERNMENT USER RIGHTS IN DATA: If procured by, or provided to, the U.S. Government, 
+use, duplication, or disclosure of technical data is subject to restrictions as set 
+forth in DFARS 252.227-7013(c) (1) (ii), FAR 52.227-14(g)(2), Rights in Data-General 
+(June 1987); and for computer software and computer software documentation, FAR 52-227-19, 
+Commercial Computer Software-Restricted Rights (June 1987). However, if under DOD, use, 
+duplication, or disclosure of technical data is subject to DFARS 252.227-7015(b), Technical 
+Data-Commercial Items (June 1995); and for computer software and computer software 
+documentation, as specified in the license under which the computer software was procured 
+pursuant to DFARS 227.7202-3(a).  Licensee shall not provide Sun Software nor technical 
+data to any third party, including the U.S. Government, unless such third party accepts 
+the same restrictions. Licensee is responsible for ensuring that proper notice is given 
+to all such third parties and that the Sun Software and technical data are properly marked.
+
+6. EXPORT LAW.  Licensee acknowledges and agrees that the Sun Software and/or technology 
+is subject to the U.S. Export Administration Laws and Regulations. Diversion of such Sun 
+Software and/or technology contrary to U.S. law is prohibited. Licensee agrees that none 
+of the Sun Software and/or technology, nor any direct product therefrom, is being or will 
+be acquired for, shipped, transferred, or reexported, directly or indirectly, to proscribed 
+or embargoed countries or their nationals, nor be used for nuclear activities, chemical 
+biological weapons, or missile projects unless authorized by the U.S. Government. 
+Proscribed countries are set forth in the U.S. Export Administration Regulations. Countries 
+subject to U.S. embargo are: Cuba, Iran, Iraq, Libya, North Korea, Syria, and the Sudan. 
+This list is subject to change without further notice from Sun, and Licensee must comply 
+with the list as it exists in fact. Licensee certifies that it is not on the U.S. 
+Department of Commerce's Denied Persons List or affiliated lists or on the U.S. Department 
+of Treasury's Specially Designated Nationals List.  Licensee agrees to comply strictly 
+with all U.S. export laws and assumes sole responsibility for obtaining licenses to export 
+or re-export as may be required.  Licensee is responsible for complying with any applicable 
+local laws and regulations, including but not limited to, the export and import laws and 
+regulations of other countries.
+
+7. TRADEMARKS AND LOGOS.  This Agreement does not authorize Licensee to use any Sun name, 
+trademark or logo. Licensee acknowledges that Sun owns the Java trademark and all Java-related 
+trademarks, logos and icons including the Coffee Cup and Duke ("Java Marks") and agrees to:  
+
+(i) comply with the Java Trademark Guidelines at http://java.sun.com/trademarks.html; 
+(ii) not do anything harmful to or inconsistent with Sun's rights in the Java Marks; and 
+(iii) assist Sun in protecting those rights, including assigning to Sun any rights acquired 
+by Licensee in any Java Mark.
+
+8. TERMINATION.  This Agreement is effective until terminated.  You may terminate this 
+Agreement at any time by destroying all copies of Sun Software.  This Agreement will 
+terminate immediately without notice from Sun if you fail to comply with any provision of 
+this Agreement.  Upon Termination, you must destroy all copies of Sun Software.
+
+9. GOVERNING LAW.  Any action related to the Sun Software will be governed by California 
+law and controlling U.S. federal law.  No choice of law rules of any jurisdiction will apply.
+
+10. SEVERABILITY.  If any provision of this Agreement is held to be unenforceable, This 
+Agreement will remain in effect with the provision omitted, unless omission would frustrate 
+the intent of the parties, in which case this Agreement will immediately terminate.
+
+11. INTEGRATION.  This Agreement is the entire agreement between you and Sun relating to 
+its subject matter.  It supersedes all prior or contemporaneous oral or written communications, 
+proposals, representations and warranties and prevails over any conflicting or additional 
+terms of any quote, order, acknowledgment, or other communication between the parties relating 
+to its subject matter during the term of this Agreement.  No modification of this Agreement 
+will be binding, unless in writing and signed by an authorized representative of each party.
+
+

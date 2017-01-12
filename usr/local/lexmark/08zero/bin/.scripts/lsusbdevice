@@ -1,0 +1,66 @@
+#!/bin/bash
+
+discover()
+{
+   UDEVADM=/sbin/udevadm
+   if [ -f ${UDEVADM} ]; then
+       contains=`ls /dev/usb/lp*`
+       if [ "$contains" != "" ]; then
+           for ((n=0; n < 16; n++)) do
+               if [ -e /dev/usb/lp${n} ]; then
+                   lnk=`${UDEVADM} info -q path -n /dev/usb/lp${n}`
+                   if [ "$lnk" != "" ]; then
+                       nfo=`${UDEVADM} info -a -p ${lnk} | grep ieee1284_id | sed 's/ATTRS{ieee1284_id}==//g' | awk -F\" '{print $2}'`
+                       model=`echo $nfo | sed 's/^.*MODEL://g' | sed 's/;.*$//g'`
+                       mfg=`echo $nfo | sed 's/^.*MFG://g' | sed 's/;.*$//g'`
+                       escmodel=`echo $model | sed 's/ /%20/g'`
+                       echo "usb://$mfg/$escmodel"
+                   fi
+               fi
+           done
+       else
+           busid=`lsusb | grep 043d: | awk '{print $2 ":" $4}'`
+           for item in $busid; do
+               bus=`echo $item | awk -F: '{print $1}'`
+               dev=`echo $item | awk -F: '{print $2}'`
+               lnk=`${UDEVADM} info -q path -n /dev/bus/usb/$bus/$dev`
+               pro=`${UDEVADM} info -a -p $lnk | grep 'ATTR{product}==' | sed 's/ATTR{product}==//g' | awk -F\" '{print $2}'`
+               mfg=`${UDEVADM} info -a -p $lnk | grep 'ATTR{manufacturer}==' | sed 's/ATTR{manufacturer}==//g' | awk -F\" '{print $2}'`
+               ser=`${UDEVADM} info -a -p $lnk | grep 'ATTR{serial}==' | sed 's/ATTR{serial}==//g' | awk -F\" '{print $2}'`
+               escpro=`echo $pro | sed 's/ /%20/g'`
+               echo "usb://$mfg/$escpro?serial=$ser"
+           done
+       fi       
+   fi
+}
+
+getqueues()
+{
+   nuri=`echo $uri | sed s/usb:\\\/\\\///`
+   list=`lpstat -v | awk '{print $3 "@" $NF}' | sed s/usb:\\\/\\\///`
+   for i in $list; do
+       ifn=`echo $i | awk -F: '{print $1 $2}'`
+       fn=`echo $ifn | sed s/@.*$//`
+       puri=`echo $ifn | sed s/$fn@//`
+       if [ "$puri" = "$nuri" ]; then
+           echo $fn
+       fi
+   done
+}
+
+while getopts ":o:u:a" Option
+do
+  case $Option in    
+       a   )   attach="1" ;;
+       u   )   uri=${OPTARG} ;;
+       o   )   output=${OPTARG} ;;
+  esac
+done
+
+if [ "${uri}" != "" ]; then
+    getqueues  
+fi
+
+if [ "${attach}" = "1" ]; then
+    discover
+fi

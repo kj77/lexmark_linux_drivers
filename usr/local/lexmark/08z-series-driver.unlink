@@ -1,0 +1,65 @@
+#!/bin/sh
+/bin/echo "           -- Removing symbolic links"
+
+if [ -z $RPM_INSTALL_PREFIX ] ; then
+  RPM_INSTALL_PREFIX=`/usr/bin/dirname $0`
+  cd $RPM_INSTALL_PREFIX
+fi
+
+/bin/rm /etc/sane.d/Lexmark08_1_0_0.conf
+/bin/rm /etc/udev/rules.d/99-lexmark-08z.rules
+/bin/rm /usr/lexinkjet/08zero
+/bin/rm /usr/lib/liblxdmflib
+/bin/rm /usr/lib/liblxdmflib.so
+/bin/rm /usr/lib/liblxdmhpec
+/bin/rm /usr/lib/liblxdmhpec.so
+/bin/rm /usr/lib/liblxdmhpeh
+/bin/rm /usr/lib/liblxdmhpeh.so
+/bin/rm /usr/lib/liblxdmhpep
+/bin/rm /usr/lib/liblxdmhpep.so
+/bin/rm /usr/lib/liblxdqflib
+/bin/rm /usr/lib/liblxdqflib.so
+/bin/rm /usr/lib/liblxdqhpec
+/bin/rm /usr/lib/liblxdqhpec.so
+/bin/rm /usr/lib/liblxdqhpeh
+/bin/rm /usr/lib/liblxdqhpeh.so
+/bin/rm /usr/lib/liblxdqhpep
+/bin/rm /usr/lib/liblxdqhpep.so
+/bin/rm /usr/lib/liblxdrflib
+/bin/rm /usr/lib/liblxdrflib.so
+/bin/rm /usr/lib/liblxdrhpec
+/bin/rm /usr/lib/liblxdrhpec.so
+/bin/rm /usr/lib/liblxdrhpeh
+/bin/rm /usr/lib/liblxdrhpeh.so
+/bin/rm /usr/lib/liblxdrhpep
+/bin/rm /usr/lib/liblxdrhpep.so
+/bin/rm /usr/lib/liblxduflib
+/bin/rm /usr/lib/liblxduflib.so
+/bin/rm /usr/lib/liblxduhpec
+/bin/rm /usr/lib/liblxduhpec.so
+/bin/rm /usr/lib/liblxduhpeh
+/bin/rm /usr/lib/liblxduhpeh.so
+/bin/rm /usr/lib/liblxduhpep
+/bin/rm /usr/lib/liblxduhpep.so
+/bin/rm /usr/lib/liblxdwflib
+/bin/rm /usr/lib/liblxdwflib.so
+/bin/rm /usr/lib/liblxdwhpec
+/bin/rm /usr/lib/liblxdwhpec.so
+/bin/rm /usr/lib/liblxdwhpeh
+/bin/rm /usr/lib/liblxdwhpeh.so
+/bin/rm /usr/lib/liblxdwhpep
+/bin/rm /usr/lib/liblxdwhpep.so
+/bin/rm /usr/lib/liblxdxflib
+/bin/rm /usr/lib/liblxdxflib.so
+/bin/rm /usr/lib/liblxdxhpec
+/bin/rm /usr/lib/liblxdxhpec.so
+/bin/rm /usr/lib/liblxdxhpeh
+/bin/rm /usr/lib/liblxdxhpeh.so
+/bin/rm /usr/lib/liblxdxhpep
+/bin/rm /usr/lib/liblxdxhpep.so
+/bin/rm /usr/lib/cups/backend/lxk08zusb
+/bin/rm /usr/lib/sane/libsane-Lexmark08_1_0_0.so
+/bin/rm /usr/lib/sane/libsane-Lexmark08_1_0_0.so.1
+/bin/rm /usr/lib/sane/libsane-Lexmark08_1_0_0.so.1.0.18
+
+exit 0

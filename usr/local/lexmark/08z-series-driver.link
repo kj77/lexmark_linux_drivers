@@ -1,0 +1,118 @@
+#!/bin/sh
+
+chkpath() {
+  DIRPATH=`/usr/bin/dirname $1`
+  if [ ! -d "$DIRPATH" ] ; then 
+    /bin/mkdir -m 755 -p $DIRPATH
+  fi
+}
+
+mklink() {
+  if [ ! -r "$1" ] ; then
+    echo "$1 does not exist"
+    return
+  fi
+
+  chkpath "$2"
+  if [ -r "$2" -o -h "$2" ] ; then
+    if [ -h "$2" ] ; then
+      echo "symbolic link $2 currently exists.  Removing."
+      /bin/rm -f $2
+    else
+      echo "$2 is a real file.  Can not create link"
+      return
+    fi
+  fi
+  /bin/ln -s $1 $2
+}
+
+/bin/echo "   -- Updating symbolic links"
+
+
+if [ -z "/usr/local/lexmark" ] ; then
+  CWD=`/bin/pwd`;
+  BASEDIR=`/bin/dirname $0`
+  cd /usr/local/lexmark
+  BASEDIR=`/bin/pwd`;
+  cd $CWD
+fi
+
+copy_overwrite() {
+  chkpath "$2"
+  if [ -r "$2" ] ; then
+    /bin/rm -f $2
+  fi
+  cp $1 $2
+}
+copy_nooverwrite() {
+  chkpath "$2"
+  if [ -r "$2" ] ; then
+    return
+  fi
+
+  cp $1 $2
+}
+RPM_INSTALL_PREFIX=$1;
+
+if [ -z $RPM_INSTALL_PREFIX ] ; then
+  RPM_INSTALL_PREFIX=`/usr/bin/dirname $0`
+  cd $RPM_INSTALL_PREFIX
+fi
+
+mklink $RPM_INSTALL_PREFIX/08zero/etc/Lexmark08_1_0_0.conf /etc/sane.d/Lexmark08_1_0_0.conf
+mklink $RPM_INSTALL_PREFIX/08zero/etc/99-lexmark-08z.rules /etc/udev/rules.d/99-lexmark-08z.rules
+mklink $RPM_INSTALL_PREFIX/08zero /usr/lexinkjet/08zero
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdmflib.so /usr/lib/liblxdmflib
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdmflib.so /usr/lib/liblxdmflib.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdmhpec.so /usr/lib/liblxdmhpec
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdmhpec.so /usr/lib/liblxdmhpec.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdmhpeh.so /usr/lib/liblxdmhpeh
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdmhpeh.so /usr/lib/liblxdmhpeh.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdmhpep.so /usr/lib/liblxdmhpep
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdmhpep.so /usr/lib/liblxdmhpep.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdqflib.so /usr/lib/liblxdqflib
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdqflib.so /usr/lib/liblxdqflib.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdqhpec.so /usr/lib/liblxdqhpec
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdqhpec.so /usr/lib/liblxdqhpec.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdqhpeh.so /usr/lib/liblxdqhpeh
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdqhpeh.so /usr/lib/liblxdqhpeh.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdqhpep.so /usr/lib/liblxdqhpep
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdqhpep.so /usr/lib/liblxdqhpep.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdrflib.so /usr/lib/liblxdrflib
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdrflib.so /usr/lib/liblxdrflib.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdrhpec.so /usr/lib/liblxdrhpec
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdrhpec.so /usr/lib/liblxdrhpec.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdrhpeh.so /usr/lib/liblxdrhpeh
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdrhpeh.so /usr/lib/liblxdrhpeh.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdrhpep.so /usr/lib/liblxdrhpep
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdrhpep.so /usr/lib/liblxdrhpep.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxduflib.so /usr/lib/liblxduflib
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxduflib.so /usr/lib/liblxduflib.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxduhpec.so /usr/lib/liblxduhpec
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxduhpec.so /usr/lib/liblxduhpec.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxduhpeh.so /usr/lib/liblxduhpeh
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxduhpeh.so /usr/lib/liblxduhpeh.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxduhpep.so /usr/lib/liblxduhpep
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxduhpep.so /usr/lib/liblxduhpep.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdwflib.so /usr/lib/liblxdwflib
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdwflib.so /usr/lib/liblxdwflib.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdwhpec.so /usr/lib/liblxdwhpec
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdwhpec.so /usr/lib/liblxdwhpec.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdwhpeh.so /usr/lib/liblxdwhpeh
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdwhpeh.so /usr/lib/liblxdwhpeh.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdwhpep.so /usr/lib/liblxdwhpep
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdwhpep.so /usr/lib/liblxdwhpep.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdxflib.so /usr/lib/liblxdxflib
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdxflib.so /usr/lib/liblxdxflib.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdxhpec.so /usr/lib/liblxdxhpec
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdxhpec.so /usr/lib/liblxdxhpec.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdxhpeh.so /usr/lib/liblxdxhpeh
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdxhpeh.so /usr/lib/liblxdxhpeh.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdxhpep.so /usr/lib/liblxdxhpep
+mklink $RPM_INSTALL_PREFIX/08zero/lib/liblxdxhpep.so /usr/lib/liblxdxhpep.so
+mklink $RPM_INSTALL_PREFIX/08zero/bin/lxk08zusb /usr/lib/cups/backend/lxk08zusb
+mklink $RPM_INSTALL_PREFIX/08zero/lib/libsane-Lexmark08_1_0_0.so.1.0.18 /usr/lib/sane/libsane-Lexmark08_1_0_0.so
+mklink $RPM_INSTALL_PREFIX/08zero/lib/libsane-Lexmark08_1_0_0.so.1.0.18 /usr/lib/sane/libsane-Lexmark08_1_0_0.so.1
+mklink $RPM_INSTALL_PREFIX/08zero/lib/libsane-Lexmark08_1_0_0.so.1.0.18 /usr/lib/sane/libsane-Lexmark08_1_0_0.so.1.0.18
+
+exit 0
